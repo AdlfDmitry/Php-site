@@ -4,7 +4,7 @@ if (isset($_POST['submit'])) {
     $full_name = $_POST['full_name'];
     $phone_number = $_POST['phone_number'];
     $email = $_POST['email'];
-    $query = $conn->prepare("INSERT INTO Customer (Full_Name, Phone_Number, Email) VALUES (?, ?, ?)");
+    $query = $conn->prepare("INSERT INTO Bank_Account (Full_Name, Phone_Number, Email) VALUES (?, ?, ?)");
    
     $query->bind_param("sss", $full_name, $phone_number, $email);
     $result = $query->execute();
@@ -66,7 +66,7 @@ if (isset($_POST['submit'])) {
     <label for="email">Email:</label><br>
     <input type="text" id="email" name="email" onkeyup="checkForm()"><br><br>
     <button class="btn" id="submit_button" type="submit" name="submit" disabled>Submit</button>
-   <button class="btn" onclick=" window.location.href = 'index.php';return false">Back</button>
+   <button class="btn" onclick=" window.location.href = 'admin_panel.php';return false">Back</button>
 
 
 </form>
