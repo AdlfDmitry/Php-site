@@ -78,17 +78,8 @@ nav ul {
 
 .button-container {
     margin-top: 20px;
+    margin-bottom: 20px;
 }
-
-form {
-    width: 300px;
-    margin: 0 auto; /* центруємо форму по горизонталі */
-}
-
-    form label {
-        display: block;
-        margin-bottom: 5px;
-    }
 
 .btn {
     display: inline-block;
@@ -98,6 +89,8 @@ form {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
     .btn:hover {
@@ -114,43 +107,29 @@ footer {
     text-align: center;
 }
 
-form button.btn:disabled {
-    background-color: #99aab5;
-    cursor: not-allowed;
-    margin-bottom: 10px;
+select {
+    padding: 8px 16px; 
+    font-size: 16px; 
+    border: 1px solid #7289da;
+    border-radius: 4px; 
+    background-color: #36393f;
+    color: #ffffff; 
+    appearance: none; 
 }
 
-form button.btn:hover {
-    background-color: #677bc4;
-}
+    
+    select option {
+        background-color: #36393f; 
+        color: #ffffff; 
+    }
 
-form label {
-    display: block;
-    margin-bottom: 5px;
-}
+    
+    select:hover {
+        border-color: #ffffff; 
+    }
 
-form input[type="text"] {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #4f545c;
-    background-color: #4f545c;
-    color: #ffffff;
-}
-
-form button.btn {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #7289da;
-    color: #ffffff;
-    cursor: pointer;
-    margin-bottom: 10px;
-}
-
-form h2 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
+    
+    select:focus {
+        outline: none; 
+        box-shadow: 0 0 0 2px #7289da; 
+    }

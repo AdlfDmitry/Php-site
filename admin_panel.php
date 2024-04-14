@@ -7,7 +7,8 @@ require_once 'db.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Bank</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="administrator_panel.css">
+     <script src="admin_panel.js" defer></script>
 </head>
 <body>
     <header>
@@ -33,13 +34,37 @@ require_once 'db.php';
      </center>
     </section>
      <div class="container">
+       <center> <h1>Customers of Banking System</h1> </center>
          <div class="button-container">
           <center>   
-              <button class="btn" onclick=" window.location.href='admin_panel.php'">Browse Database </button>
+           
             
+              <button class="btn" onclick=" window.location.href='index.php'">Back</button>  
+         <select id="TableName" onchange="redirect()">
+             <option></option>
+    <option value="browsing_customers.php">Customer</option>
+    <option value="bank_accounts.php">Bank Account</option>
+    <option value="terminal.php">Terminal</option>
+    <option value="technical_support.php">Technical Support</option>
+    <option value="operation.php">Operation</option>
+</select>
          </center>
+
         </div>
+         <div>
         
+
+<script>
+    function redirect() {
+        var selectedValue = document.getElementById("TableName").value;
+        window.location.href = selectedValue;
+    }
+</script>
+
+
+             </div>
+        
+         
     </div>
     
 </body>
