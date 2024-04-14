@@ -9,5 +9,5 @@ Sorry Discord for stealing yours desingn, for sure i like it/
 
 
 
-If i dont edit this repository i`ve got kicked from University :(
-First step completed , i`ve added button to switch between tables of database to browse
+If i dont edit this repository i've been kicked from University :(
+First step completed , i've added button to switch between tables of database to browse
